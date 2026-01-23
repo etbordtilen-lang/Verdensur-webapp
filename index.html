@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock Webapp</title>
   </head>
   <body>
@@ -17,22 +19,40 @@
         <option value="Australia/Sydney">Sydney (UTC+10)</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="row-one">
         <div>
           <h2>Sydney</h2>
-          <div class="date">January 20th 2026</div>
+          <div class="date"></div>
         </div>
         <div>
-          <div class="time">14:35:50 <small>AM</small></div>
+          <div class="time"></div>
         </div>
       </div>
-      <div class="city">
+      <div class="city" id="row-two">
         <div>
           <h2>Hong Kong</h2>
-          <div class="date">January 20th 2026</div>
+          <div class="date"></div>
         </div>
         <div>
-          <div class="time">14:35:50 <small>AM</small></div>
+          <div class="time"></div>
+        </div>
+      </div>
+      <div class="city" id="row-three">
+        <div>
+          <h2>London</h2>
+          <div class="date"></div>
+        </div>
+        <div>
+          <div class="time"></div>
+        </div>
+      </div>
+      <div class="city" id="row-four">
+        <div>
+          <h2>New York</h2>
+          <div class="date"></div>
+        </div>
+        <div>
+          <div class="time"></div>
         </div>
       </div>
     </div>
