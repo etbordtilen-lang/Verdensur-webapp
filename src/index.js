@@ -2,7 +2,7 @@ function updateTime() {
   let rowOneElement = document.querySelector("#row-one");
   let rowOneDateElement = rowOneElement.querySelector(".date");
   let rowOneTimeElement = rowOneElement.querySelector(".time");
-  let rowOneTime = moment().tz("Australia/Sydney");
+  let rowOneTime = moment().tz("UTC");
 
   rowOneDateElement.innerHTML = rowOneTime.format("MMMM Do YYYY");
   rowOneTimeElement.innerHTML = `${rowOneTime.format("h:mm:ss")} <small>${rowOneTime.format("A")}</small>`;
@@ -11,7 +11,7 @@ function updateTime() {
   let rowTwoElement = document.querySelector("#row-two");
   let rowTwoDateElement = rowTwoElement.querySelector(".date");
   let rowTwoTimeElement = rowTwoElement.querySelector(".time");
-  let rowTwoTime = moment().tz("Asia/Hong_Kong");
+  let rowTwoTime = moment().tz("Asia/Tokyo");
 
   rowTwoDateElement.innerHTML = rowTwoTime.format("MMMM Do YYYY");
   rowTwoTimeElement.innerHTML = `${rowTwoTime.format("h:mm:ss")} <small>${rowTwoTime.format("A")}</small>`;
@@ -20,7 +20,7 @@ function updateTime() {
   let rowThreeElement = document.querySelector("#row-three");
   let rowThreeDateElement = rowThreeElement.querySelector(".date");
   let rowThreeTimeElement = rowThreeElement.querySelector(".time");
-  let rowThreeTime = moment().tz("Europe/London");
+  let rowThreeTime = moment().tz("Europe/Copenhagen");
 
   rowThreeDateElement.innerHTML = rowThreeTime.format("MMMM Do YYYY");
   rowThreeTimeElement.innerHTML = `${rowThreeTime.format("h:mm:ss")} <small>${rowThreeTime.format("A")}</small>`;
@@ -34,6 +34,13 @@ function updateTime() {
   rowFourDateElement.innerHTML = rowFourTime.format("MMMM Do YYYY");
   rowFourTimeElement.innerHTML = `${rowFourTime.format("h:mm:ss")} <small>${rowFourTime.format("A")}</small>`;
 }
-updateTime(); // Initial call to set time immediately
 
+function updateCityTime(event) {
+  let cityTimeZone = event.target.value;
+}
+
+updateTime(); // Initial call to set time immediately
 setInterval(updateTime, 1000);
+
+let citiesSelectElement = document.querySelector("#timezone-select");
+citiesSelectElement.addEventListener("change", updateCityTime);
