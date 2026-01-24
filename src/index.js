@@ -6,33 +6,6 @@ function updateTime() {
 
   rowOneDateElement.innerHTML = rowOneTime.format("MMMM Do YYYY");
   rowOneTimeElement.innerHTML = `${rowOneTime.format("h:mm:ss")} <small>${rowOneTime.format("A")}</small>`;
-
-  // Repeat for row two
-  let rowTwoElement = document.querySelector("#row-two");
-  let rowTwoDateElement = rowTwoElement.querySelector(".date");
-  let rowTwoTimeElement = rowTwoElement.querySelector(".time");
-  let rowTwoTime = moment().tz("Asia/Tokyo");
-
-  rowTwoDateElement.innerHTML = rowTwoTime.format("MMMM Do YYYY");
-  rowTwoTimeElement.innerHTML = `${rowTwoTime.format("h:mm:ss")} <small>${rowTwoTime.format("A")}</small>`;
-
-  // Repeat for row three
-  let rowThreeElement = document.querySelector("#row-three");
-  let rowThreeDateElement = rowThreeElement.querySelector(".date");
-  let rowThreeTimeElement = rowThreeElement.querySelector(".time");
-  let rowThreeTime = moment().tz("Europe/Copenhagen");
-
-  rowThreeDateElement.innerHTML = rowThreeTime.format("MMMM Do YYYY");
-  rowThreeTimeElement.innerHTML = `${rowThreeTime.format("h:mm:ss")} <small>${rowThreeTime.format("A")}</small>`;
-
-  // Repeat for row four
-  let rowFourElement = document.querySelector("#row-four");
-  let rowFourDateElement = rowFourElement.querySelector(".date");
-  let rowFourTimeElement = rowFourElement.querySelector(".time");
-  let rowFourTime = moment().tz("America/New_York");
-
-  rowFourDateElement.innerHTML = rowFourTime.format("MMMM Do YYYY");
-  rowFourTimeElement.innerHTML = `${rowFourTime.format("h:mm:ss")} <small>${rowFourTime.format("A")}</small>`;
 }
 
 function updateCityTime(event) {
@@ -41,7 +14,7 @@ function updateCityTime(event) {
   let cityTime = moment().tz(cityTimeZone);
   //console.log(cityTime.format("MMM Do YYYY"));
   let citiesElement = document.querySelector(".cities");
-  citiesElement.innerHTML = ` 
+  citiesElement.innerHTML += ` 
   <div class="city">
     <div>
         <h2>${cityName}</h2>
