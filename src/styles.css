@@ -1,25 +1,27 @@
 body {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("WorldMap.jpg");
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url("WorldMapBlue.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: Helvetica, arial, sans-serif;
   min-height: 100vh;
+  margin-bottom: 60px;
 }
 
 .clocks-container {
-  background-color: #bfa58b;
+  background-color: #4c82a3;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 60px auto;
+  margin-top: 80px;
   max-width: 600px;
   padding: 20px;
 }
 
 h1 {
-  color: #371c11;
+  color: #222443;
   font-family: Helvetica, arial, sans-serif;
   font-size: 46px;
   text-align: center;
@@ -47,34 +49,39 @@ select {
 }
 
 h2 {
-  color: #371c11;
+  color: #222443;
   font-size: 30px;
   margin: 0 0 10px;
 }
 
 .current-date,
 .date {
-  color: #efeede;
+  color: #bfbfbf;
   opacity: 0.7;
 }
 
 .current-time,
 .time {
-  color: #371c11;
+  color: #222443;
   font-size: 42px;
   font-weight: bold;
 }
 
 .current-time small,
 .time small {
-  color: #371c11;
+  color: #222443;
   font-size: 18px;
   line-height: 36px;
   vertical-align: middle;
 }
 
 footer {
-  color: rgba(0, 0, 0, 0.5);
+  color: #383636;
+  height: 60px;
   font-family: Helvetica, arial, sans-serif;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   text-align: center;
 }
