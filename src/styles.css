@@ -1,10 +1,16 @@
 body {
-  background-image: url("Images/WorldMap.jpg");
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("WorldMap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Helvetica, arial, sans-serif;
+  min-height: 100vh;
 }
 
 .clocks-container {
-  background-color: #e1d9bc;
+  background-color: #bfa58b;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 60px auto;
@@ -13,10 +19,11 @@ body {
 }
 
 h1 {
-  color: #30364f;
+  color: #371c11;
   font-family: Helvetica, arial, sans-serif;
   font-size: 46px;
   text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 select {
@@ -40,27 +47,27 @@ select {
 }
 
 h2 {
-  color: #30364f;
+  color: #371c11;
   font-size: 30px;
   margin: 0 0 10px;
 }
 
 .current-date,
 .date {
-  color: #acbac4;
+  color: #efeede;
   opacity: 0.7;
 }
 
 .current-time,
 .time {
-  color: #30364f;
+  color: #371c11;
   font-size: 42px;
   font-weight: bold;
 }
 
 .current-time small,
 .time small {
-  color: #30364f;
+  color: #371c11;
   font-size: 18px;
   line-height: 36px;
   vertical-align: middle;
