@@ -10,7 +10,7 @@ function updateTime() {
     let userCityName = userTimeZone.replace("_", " ").split("/")[1];
     let userTime = moment().tz(userTimeZone);
 
-    rowOneHeader.innerHTML = `${userCityName}`;
+    rowOneHeader.innerHTML = `${userCityName} <small style="font-size: 12px; color:#222443;">(Current Location)</small>`;
     rowOneDateElement.innerHTML = userTime.format("MMMM Do YYYY");
     rowOneTimeElement.innerHTML = `${userTime.format("h:mm:ss")} <small>${userTime.format("A")}</small>`;
   }
