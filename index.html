@@ -13,25 +13,24 @@
       <h1>World Clocks</h1>
 
       <select id="timezone-select">
-        <option value="UTC">Select a City..</option>
+        <option value="">Select a City..</option>
         <option value="America/Los_Angeles">Los Angeles (UTC-8)</option>
         <option value="America/New_York">New York (UTC-5)</option>
         <option value="Europe/London">London (UTC+0)</option>
-        <option value="Europe/Copenhagen">Copenhagen (UTC+1)</option>
+        <option value="Europe/Brussels">Brussels (UTC+1)</option>
         <option value="Asia/Tokyo">Tokyo (UTC+9)</option>
         <option value="Australia/Sydney">Sydney (UTC+10)</option>
       </select>
 
       <div class="cities">
-        <div class="city" id="row-one">
+        <div class="city" id="current-location">
           <div>
-            <h2>Your Current City</h2>
-            <div class="date"></div>
+            <h2 class="current-city"></h2>
+            <div class="current-date"></div>
           </div>
-          <div>
-            <div class="time"></div>
-          </div>
+          <div class="current-time"></div>
         </div>
+        <div id="selected-city"></div>
       </div>
     </div>
     <br />

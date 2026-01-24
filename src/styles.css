@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0db;
+  background-image: url("Images/WorldMap.jpg");
   font-family: Helvetica, arial, sans-serif;
 }
 
@@ -27,6 +27,7 @@ select {
 }
 
 .city {
+  align-items: center;
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
@@ -44,17 +45,20 @@ h2 {
   margin: 0 0 10px;
 }
 
+.current-date,
 .date {
   color: #acbac4;
   opacity: 0.7;
 }
 
+.current-time,
 .time {
   color: #30364f;
   font-size: 42px;
   font-weight: bold;
 }
 
+.current-time small,
 .time small {
   color: #30364f;
   font-size: 18px;
